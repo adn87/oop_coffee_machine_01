@@ -9,7 +9,8 @@ item = MenuItem
 
 thirsty = True
 while thirsty:
-    answer = input("what would you like? (espresso/latte/cappuccino): ").lower()
+    option = menu.get_items()
+    answer = input(f"what would you like? ({option}) ").lower()
     if answer == "off":
         print(f"Coffee machine needs some rest. MACHINE {answer}")
         thirsty = False
